@@ -1,0 +1,12 @@
+version: '3'
+services:
+  vscode-docker:
+    build: .
+    command: npm run debug-remote-nm
+    environment:
+      FORCE_COLOR: 1
+    ports:
+      - 9000:9000
+      - 9229:9229
+    volumes:
+      - ./src:/home/app/src
