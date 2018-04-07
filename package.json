@@ -1,6 +1,6 @@
 {
   "name": "nsk-remote-debug",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Node starter kit for testing VSCode remote debugging in Docker",
   "main": "src/index.js",
   "scripts": {
