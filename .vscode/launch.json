@@ -7,22 +7,19 @@
     {
       "type": "node",
       "request": "attach",
-      "name": "Node: Attach",
+      "name": "Node: Attach Local",
       "port": 9229
     },
     {
       "type": "node",
       "request": "attach",
-      "name": "Docker: Attach",
+      "name": "Node: Attach Docker",
       "address": "localhost",
       "port": 9229,
       "protocol": "auto",
       "restart": true,
       "localRoot": "${workspaceFolder}",
-      "remoteRoot": "/home/app",
-      "outFiles": [
-        "${workspaceFolder}/src/**/*.js"
-      ]
+      "remoteRoot": "/home/app"
     },
   ]
 }

@@ -5,9 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "debug-local": "node --inspect ./src/index.js",
-    "debug-local-nm": "nodemon --watch ./src --inspect ./src/index.js",
+    "debug-local-rs": "nodemon --watch ./src --inspect ./src/index.js",
     "debug-remote": "node --inspect=0.0.0.0:9229 --nolazy ./src/index.js",
-    "debug-remote-nm": "nodemon --watch ./src --inspect=0.0.0.0:9229 --nolazy ./src/index.js",
+    "debug-remote-rs": "nodemon --watch ./src --inspect=0.0.0.0:9229 --nolazy ./src/index.js",
     "lint": "eslint ./src",
     "preinstall": "npm prune",
     "release": "standard-version",

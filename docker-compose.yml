@@ -1,8 +1,8 @@
 version: '3'
 services:
-  vscode-docker:
+  vsc-debug:
     build: .
-    command: npm run debug-remote-nm
+    command: npm run debug-remote-rs
     environment:
       FORCE_COLOR: 1
     ports:
