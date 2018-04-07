@@ -43,10 +43,15 @@ The steps are the same as above, except in VSCode's `Debug` view, select `Node: 
 The `remoteRoot` setting in the `/.vscode/launch.json` Docker configuration must match the path to the application's root directory in the container (`/home/app` in this example).
 
 The example setup in this repo assumes Node 8+ to take advantage of V8's newer [inspector](https://chromedevtools.github.io/debugger-protocol-viewer/v8/) protocol. You can use older versions of Node (which use the legacy `debugger` api), but must use port 5858 instead of 9229 in the following locations:
-  - port settings in /vscode/launch.json
+  - port settings in /.vscode/launch.json
   - port mappings in /docker-compose.yml
   - exposed port in /Dockerfile
   - `debug-remote` and `debug-remote-rs` scripts in /package.json
+
+## Further Reading
+- [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+- [Node.js Debugging Recipes](https://code.visualstudio.com/docs/nodejs/debugging-recipes)
+- [Microsoft/vscode-recipes](https://github.com/Microsoft/vscode-recipes)
 
 ## License
 [WTFPL License](LICENSE)
